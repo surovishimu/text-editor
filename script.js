@@ -21,7 +21,7 @@ document.getElementById('italic-btn').addEventListener('click', function () {
 document.getElementById('underline-btn').addEventListener('click', function () {
     const textArea = document.getElementById('text-area');
     if (textArea.style.textDecoration == 'underline') {
-        textArea.style.textDecoration = 'normal';
+        textArea.style.textDecoration = 'none';
     }
     else {
         textArea.style.textDecoration = 'underline';
@@ -74,6 +74,6 @@ const textArea2 = document.getElementById('text-area');
 
 colourInput.addEventListener("click", function () {
     const colourValue = colourInput.value;
-   
+
     textArea2.style.color = colourValue;
 })
