@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-cyan-500  max-w-screen-lg mx-auto mt-10 rounded-lg pb-10">
+        <h1 class="text-3xl font-semibold text-center py-4">My Text Editor</h1>
+        <div class="bg-cyan-200 max-w-screen-md   mx-auto border-stone-600  border-2 rounded-sm   ">
+
+            <div class="flex md:justify-around justify-center items-center">
+                <ul class="flex md:gap-4 gap-0  py-5 md:ml-0 ml-5 ">
+                    <li><button id="bold-btn" class="active:bg-slate-800"><i
+                                class="fa-solid fa-bold cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+                    <li><button id="italic-btn"><i
+                                class="fa-solid fa-italic cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+                    <li><button id="underline-btn"><i
+                                class="fa-solid fa-underline cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+
+                </ul>
+                <ul class="flex md:gap-4 gap-1  py-5">
+                    <li><button id="left-btn"><i
+                                class="fa-solid fa-align-left cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+                    <li><button id="right-btn"><i
+                                class="fa-solid fa-align-right cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+                    <li><button id="center-btn"><i
+                                class="fa-solid fa-align-center cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+                    <li><button id="justify-btn"><i
+                                class="fa-solid fa-align-justify cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+
+                </ul>
+
+
+                <ul class="flex md:gap-4 gap-2 md:mr-0 mr-7 py-5 md:ml-20 ">
+                    <li class="mt-1"><input id="number-input" class="w-10" type="number" min="1" max="100" value="10">
+                    </li>
+
+                    <li><button id="font-case"><i
+                                class="fas fa-text-height cursor-pointer hover:bg-slate-400 w-8 h-8 rounded-full text-center pt-2"></i></button>
+                    </li>
+
+                    <li>
+                        <input type="color" id="color-btn" class="w-8">
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="border-t-2 border-stone-600 w-11/12 mx-auto">
+                <textarea class="outline-none  mb-4 px-5 w-11/12 h-80 md:ml-8 ml-4 mt-6 " name="" id="text-area"
+                    cols="20" rows="15"></textarea>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
